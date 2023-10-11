@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+   
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-right: 100px;
+    color: white;
+    font-size: 20px;
+    margin-top: 60px;
+    color: gray;
+}
+.blink {
+    animation: blinker 2s linear infinite;
+    border: solid;
+    border-color: blue;
+    background-color: gray;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#slider {
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img {
+    float: left;
+    width: 20%;
+
+} 
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+.content{
+    background-color: rgb(213, 212, 212);
+    text-align: center;
+    padding: 80px;
+}
+.content h1 {
+    font-size: 50px;
+}
+.content p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+.visit {
+    text-align: center;
+    margin-top: 20px;
+   
+}
+.climate {
+    display: inline-block;
+    width: 250px;
+    margin-right:100px ;
+}
+
+.stay {
+    text-align: center;
+    margin-top: 40px;
+    background-color:  rgb(231, 227, 227);
+}
+.stay h1,img {
+    margin-bottom: 20px;
+}
+
+.reach {
+    text-align: center;
+    
+    background-color: rgb(231, 227, 227);
+}
+.reach h1 {
+    margin-bottom: 20px;
+}
+.transport {
+    display : inline-block;
+    width: 250px;
+    margin-right: 100px;
+    
+}
+.marquee {
+    background-color: blue;
+    color: white;
+}
+.last {
+    display: inline-block;
+    background-color: gray;
+}
+footer {
+    text-align: center;
+    background-color: gray;
+}
